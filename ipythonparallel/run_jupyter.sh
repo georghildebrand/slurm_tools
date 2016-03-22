@@ -4,7 +4,7 @@
 # adopted from:
 # https://rcc.fsu.edu/docs/parallel-ipython-programming-hpc-and-spear
 #######
-#SBATch -N1
+#SBATCH -N1
 #SBATCH -c 4        #number of cpu
 #SBATCH -J"jupyter"
 #SBATCH --mem=40000
