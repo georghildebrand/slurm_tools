@@ -9,15 +9,10 @@
 #SBATCH -J"jupyter"
 #SBATCH --mem=40000
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=georg.hildebrand@zalando.de
-#SBATCH -p ssd
-#SBATCH -w z-lxslurm06
-#activating env
-source ~/.profile
-#try to add anaconda to pythonpath
-anaconda
-#activate env
-source activate p27
+#SBATCH --mail-user=<mail_user>
+#SBATCH -p <partition>
+#SBATCH -w <server>
+
 #run the master script
 jupyter notebook --no-browser
 
