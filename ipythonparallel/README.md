@@ -1,7 +1,10 @@
 #Short intro to ipython parallel and jupyter notebook
 
+Disclaimer. Tested for python2.x, 3.x comming soon ....
+
 These script will help you building up an ipython parallel cluster on top of the SLURM controller together with basic configuration of jupyter notebook.
 In general all these infos can be found in the web but i was so far missing a more or less complete walkthrough for ipython parallel + SLURM. Feel free to make suggestion or to contribute ...
+
 
 ##Requirements
 Its assumed that you have anaconda or similar installed. You can find more information about that here: https://docs.continuum.io/anaconda/install
@@ -71,6 +74,7 @@ Lookup the hostname / ip of the controller eg. via squeue -u <username>
 Double check the sbatch parameters in the file to adapt to your HPC cluster needs
 
 ##Try to use your engines for some parallel work.
+Have a look at the Example 1.ipynb
 
 #Links:
 http://ipyparallel.readthedocs.org/
