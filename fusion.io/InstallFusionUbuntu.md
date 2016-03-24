@@ -7,6 +7,7 @@ This might be relevant in setup together with GPU or other low latency high work
 
 2. Install the drivers:
 
+
     sudo apt-get install gcc fakeroot build-essential debhelper linux-headers-$(uname -r) rsync
     cd Software_Source
     tar xzvf iomemory-vsl<version>-1.0.tar.gz
@@ -21,6 +22,7 @@ This might be relevant in setup together with GPU or other low latency high work
 
     sudo modprobe iomemory-vsl4
     sudo fio-status # everything right? double check in case with dmesg or syslog
+
 
 3. Format the Device
 Note: You may also consider using raid options or creating partitions ... Here we simply setup an ext4 fs
