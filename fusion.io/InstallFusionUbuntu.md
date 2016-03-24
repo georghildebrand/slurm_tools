@@ -21,14 +21,12 @@ This might be relevant in setup together with GPU or other low latency high work
 
     sudo modprobe iomemory-vsl4
     sudo fio-status # everything right? double check in case with dmesg or syslog
+
 3. Format the Device
 Note: You may also consider using raid options or creating partitions ... Here we simply setup an ext4 fs
-
     sudo mkfs.ext4 /dev/fioa # format the dev with ext4
-
 4. Mount the device
-    # check if you need to add fio to fstab or read manual for driver
-
+4.1 check if you need to add fio to fstab or read manual for driver auto attach options
 
 #uninstall:
 read the manual its recommended to uninstall all the drivers before updating....
