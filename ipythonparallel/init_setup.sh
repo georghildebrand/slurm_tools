@@ -130,4 +130,4 @@ done
 
 echo "Done!"
 echo "Remember to use anaconda if you used it for setup"
-echo "Run on slurm: sbatch -o $HOME/notebook.log -c2 --mem=20GB -J Notebook --wrap="jupyter notebook --no-browser""
+echo "Run on slurm: sbatch -t 180 -o $HOME/notebook.log -c2 --mem=20GB -J Notebook --wrap=\"jupyter notebook --no-browser\""

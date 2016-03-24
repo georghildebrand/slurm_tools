@@ -7,6 +7,7 @@
 #SBATCH -N1
 #SBATCH -c 4        #number of cpu
 #SBATCH -J"jupyter"
+#SBATCH -t 04:00:00 # time limit
 #SBATCH --mem=40000
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=<mail_user>
