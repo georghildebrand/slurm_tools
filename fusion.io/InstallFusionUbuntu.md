@@ -19,10 +19,8 @@ This might be relevant in setup together with GPU or other low latency high work
     sudo dpkg -i *.deb # not the source one
     # install the driver
     sudo modprobe -r iomemory-vsl4
-
     sudo modprobe iomemory-vsl4
     sudo fio-status # everything right? double check in case with dmesg or syslog
-
 
 3. Format the Device
 Note: You may also consider using raid options or creating partitions ... Here we simply setup an ext4 fs
