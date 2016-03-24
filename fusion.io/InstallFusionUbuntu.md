@@ -3,7 +3,7 @@ This might be relevant in setup together with GPU or other low latency high work
 
 ##Setup
 
-1. Go to https://link.sandisk.com/commercialsupport.html and download the drivers and utils etc.
+1. Go to https://link.sandisk.com/commercialsupport.html and download the drivers and utils etc. Bascically the following scripts are an summary of the description in the manual. I recommend reading the manual
 
 2. Install the drivers:
 
