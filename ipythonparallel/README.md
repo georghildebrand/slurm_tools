@@ -1,4 +1,4 @@
-#Short intro to ipython parallel and jupyter notebook
+# Short intro to ipython parallel and jupyter notebook
 
 Disclaimer. Tested for python2.x, 3.x tbd ....
 
@@ -6,12 +6,12 @@ These script will help you building up an ipython parallel cluster on top of the
 In general all these infos can be found in the web but i was so far missing a more or less complete walkthrough for ipython parallel + SLURM. Feel free to make suggestion or to contribute ...
 
 
-##Requirements
+## Requirements
 Its assumed that you have anaconda or similar installed. You can find more information about that here: https://docs.continuum.io/anaconda/install
 
      Note: The init script is designed to work for anaconda and that anaconda is in your $HOME/anaconda
 
-##Setup
+## Setup
 To setup try running the init script
 
     ./init_setup.sh
@@ -25,7 +25,7 @@ Walk through the setup - it will:
 4. help you configure ssl and a password for your notebook server
 
 
-##Run an jupyter notebook.
+## Run an jupyter notebook.
 
 Run something like:
 
@@ -39,7 +39,7 @@ from your cluster master on slurm or just:
 If you are on a local machine.
 
 
-#Connect to ipythionparallel from jupyter
+# Connect to ipythionparallel from jupyter
 More info can be found by googling or eg here:
 https://rcc.fsu.edu/docs/parallel-ipython-programming-hpc-and-spear
 
@@ -57,14 +57,14 @@ Note: if you have no shared storage on your cluster machines it might be require
 
 Also important: Dont use the ipythonparallel cluster "tab" in the notebook. It will overwrite /delete possibly your profile information while trying to conncet to a cluster. Better is to use the following procedure
 
-###Start the controller
+### Start the controller
 
     sbatch run_master.sh
 
 Have a look at the sbatch-script to see all the commands
 look at the output file (referenced in the run_master.sh) to learn more about what the script does.
 
-###Start the ipython parallel engines
+### Start the ipython parallel engines
 
 Lookup the hostname / ip of the controller eg. via squeue -u <username>
 (--> the hostname of the run_master.sh script)
@@ -73,7 +73,7 @@ Lookup the hostname / ip of the controller eg. via squeue -u <username>
 
 Double check the sbatch parameters in the file to adapt to your HPC cluster needs
 
-##Try to use your engines for some parallel work.
+## Try to use your engines for some parallel work.
 Have a look at the Example 1.ipynb
 
 #Links:
